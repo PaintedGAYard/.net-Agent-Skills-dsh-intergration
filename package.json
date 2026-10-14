@@ -1,0 +1,43 @@
+{
+  "name": "dsh-dotnet-skills",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Bridges .NET Agent Skills (dotnet/skills) into DeepSeek Harness sessions as a skill provider.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "index.js",
+    "lib/**",
+    "data/**",
+    "vendor/**",
+    "locale/*.json",
+    "icon.svg",
+    "cordis.patch.yml",
+    "CHANGELOG.md"
+  ],
+  "icon": "./icon.svg",
+  "meta": {
+    "title": ".NET Agent Skills",
+    "description": "Loads curated .NET/C# skills from dotnet/skills into the session skill catalog."
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node tools/test.mjs",
+    "verify": "node tools/descriptions.mjs verify && node tools/version.mjs",
+    "sync": "node tools/sync-snapshot.mjs --ref v1.0.0",
+    "authoring": "node tools/descriptions.mjs prepare",
+    "deploy": "node tools/deploy.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

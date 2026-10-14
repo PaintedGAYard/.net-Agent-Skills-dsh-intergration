@@ -1,0 +1,4 @@
+- insert:
+    - id: dotnet-agent-skills
+      name: 'dsh-dotnet-skills'
+      config: {}

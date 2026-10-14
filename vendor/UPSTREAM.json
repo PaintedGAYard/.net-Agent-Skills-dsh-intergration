@@ -1,0 +1,903 @@
+{
+  "repo": "https://github.com/dotnet/skills",
+  "tag": "v1.0.0",
+  "commit": "cb7c10bd32b250459632df9e6fa1350cdaf00b18",
+  "fetchedAt": "2026-10-14T12:14:53.207Z",
+  "source": {
+    "kind": "explicit-ref",
+    "ref": "v1.0.0",
+    "checkout": "submodule/dotnet-skills"
+  },
+  "includedPlugins": [
+    {
+      "name": "dotnet",
+      "version": "0.1.0",
+      "description": "Common everyday C#/.NET coding skills. Expected to be useful to all .NET developers.",
+      "skillCount": 3,
+      "skills": [
+        "csharp-scripts",
+        "dotnet-pinvoke",
+        "nuget-trusted-publishing"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": "./lsp.json"
+    },
+    {
+      "name": "dotnet-data",
+      "version": "0.1.0",
+      "description": "Skills for .NET data access and Entity Framework related tasks.",
+      "skillCount": 1,
+      "skills": [
+        "optimizing-ef-core-queries"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-diag",
+      "version": "0.1.0",
+      "description": "Skills for .NET performance investigations, debugging, and incident analysis.",
+      "skillCount": 7,
+      "skills": [
+        "analyzing-dotnet-performance",
+        "android-tombstone-symbolication",
+        "apple-crash-symbolication",
+        "clr-activation-debugging",
+        "dotnet-trace-collect",
+        "dump-collect",
+        "microbenchmarking"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": [
+        "./agents/optimizing-dotnet-performance.agent.md"
+      ],
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-msbuild",
+      "version": "0.1.0",
+      "description": "Comprehensive MSBuild and .NET build skills: failure diagnosis, performance optimization, code quality, and modernization.",
+      "skillCount": 14,
+      "skills": [
+        "binlog-failure-analysis",
+        "binlog-generation",
+        "build-parallelism",
+        "build-perf-baseline",
+        "build-perf-diagnostics",
+        "check-bin-obj-clash",
+        "directory-build-organization",
+        "eval-performance",
+        "including-generated-files",
+        "incremental-build",
+        "msbuild-antipatterns",
+        "msbuild-modernization",
+        "msbuild-server",
+        "resolve-project-references"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": [
+        "./agents/build-perf.agent.md",
+        "./agents/msbuild-code-review.agent.md",
+        "./agents/msbuild.agent.md"
+      ],
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-nuget",
+      "version": "0.1.0",
+      "description": "NuGet and .NET package management skills: dependency management and modernization.",
+      "skillCount": 1,
+      "skills": [
+        "convert-to-cpm"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-upgrade",
+      "version": "0.1.0",
+      "description": "Skills for migrating and upgrading .NET projects across framework versions, language features, and compatibility targets.",
+      "skillCount": 6,
+      "skills": [
+        "dotnet-aot-compat",
+        "migrate-dotnet10-to-dotnet11",
+        "migrate-dotnet8-to-dotnet9",
+        "migrate-dotnet9-to-dotnet10",
+        "migrate-nullable-references",
+        "thread-abort-migration"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-maui",
+      "version": "0.1.0",
+      "description": "Skills for .NET MAUI development: environment setup, diagnostics, troubleshooting, navigation, data binding, dependency injection, layout, and theming.",
+      "skillCount": 8,
+      "skills": [
+        "dotnet-maui-doctor",
+        "maui-app-lifecycle",
+        "maui-collectionview",
+        "maui-data-binding",
+        "maui-dependency-injection",
+        "maui-safe-area",
+        "maui-shell-navigation",
+        "maui-theming"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-ai",
+      "version": "0.1.0",
+      "description": "AI and ML skills for .NET: technology selection, LLM integration, agentic workflows, RAG pipelines, MCP, and classic ML with ML.NET.",
+      "skillCount": 5,
+      "skills": [
+        "mcp-csharp-create",
+        "mcp-csharp-debug",
+        "mcp-csharp-publish",
+        "mcp-csharp-test",
+        "technology-selection"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-template-engine",
+      "version": "0.1.0",
+      "description": ".NET Template Engine skills for dotnet new: create projects (console app, class library, web API, Blazor, MAUI), discover and search templates, inspect template parameters and frameworks (net8.0, net9.0, net10.0), scaffold solutions, author and validate custom templates, install template packages from NuGet.",
+      "skillCount": 4,
+      "skills": [
+        "template-authoring",
+        "template-discovery",
+        "template-instantiation",
+        "template-validation"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": [
+        "./agents/template-engine.agent.md"
+      ],
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-test",
+      "version": "0.1.0",
+      "description": "Skills for running, diagnosing, and migrating .NET tests: test execution, filtering, platform detection, and MSTest workflows.",
+      "skillCount": 17,
+      "skills": [
+        "code-testing-agent",
+        "coverage-analysis",
+        "crap-score",
+        "detect-static-dependencies",
+        "dotnet-test-frameworks",
+        "filter-syntax",
+        "generate-testability-wrappers",
+        "migrate-mstest-v1v2-to-v3",
+        "migrate-mstest-v3-to-v4",
+        "migrate-static-to-wrapper",
+        "migrate-vstest-to-mtp",
+        "migrate-xunit-to-xunit-v3",
+        "mtp-hot-reload",
+        "platform-detection",
+        "run-tests",
+        "test-anti-patterns",
+        "writing-mstest-tests"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": [
+        "./agents/code-testing-generator.agent.md",
+        "./agents/code-testing-researcher.agent.md",
+        "./agents/code-testing-planner.agent.md",
+        "./agents/code-testing-implementer.agent.md",
+        "./agents/code-testing-builder.agent.md",
+        "./agents/code-testing-tester.agent.md",
+        "./agents/code-testing-fixer.agent.md",
+        "./agents/code-testing-linter.agent.md",
+        "./agents/testability-migration.agent.md",
+        "./agents/test-quality-auditor.agent.md",
+        "./agents/test-migration.agent.md"
+      ],
+      "lspServers": null
+    },
+    {
+      "name": "dotnet-aspnet",
+      "version": "0.1.0",
+      "description": "ASP.NET Core web development skills including middleware, endpoints, real-time communication, and API patterns.",
+      "skillCount": 2,
+      "skills": [
+        "configuring-opentelemetry-dotnet",
+        "minimal-api-file-upload"
+      ],
+      "skillDirs": [
+        "./skills/"
+      ],
+      "agents": null,
+      "lspServers": null
+    }
+  ],
+  "excludedPlugins": [
+    {
+      "name": "dotnet-experimental",
+      "reason": "not listed in .claude-plugin/marketplace.json, the upstream recommended set",
+      "skills": [
+        "exp-assertion-quality",
+        "exp-dotnet-test-frameworks",
+        "exp-mock-usage-analysis",
+        "exp-simd-vectorization",
+        "exp-test-gap-analysis",
+        "exp-test-maintainability",
+        "exp-test-smell-detection",
+        "exp-test-tagging"
+      ]
+    }
+  ],
+  "outOfRangePlugins": [],
+  "marketplacePlugins": [
+    "dotnet",
+    "dotnet-data",
+    "dotnet-diag",
+    "dotnet-msbuild",
+    "dotnet-nuget",
+    "dotnet-upgrade",
+    "dotnet-maui",
+    "dotnet-ai",
+    "dotnet-template-engine",
+    "dotnet-test",
+    "dotnet-aspnet"
+  ],
+  "upstreamInventory": {
+    "pluginCount": 12,
+    "skillCount": 76,
+    "skills": [
+      "analyzing-dotnet-performance",
+      "android-tombstone-symbolication",
+      "apple-crash-symbolication",
+      "binlog-failure-analysis",
+      "binlog-generation",
+      "build-parallelism",
+      "build-perf-baseline",
+      "build-perf-diagnostics",
+      "check-bin-obj-clash",
+      "clr-activation-debugging",
+      "code-testing-agent",
+      "configuring-opentelemetry-dotnet",
+      "convert-to-cpm",
+      "coverage-analysis",
+      "crap-score",
+      "csharp-scripts",
+      "detect-static-dependencies",
+      "directory-build-organization",
+      "dotnet-aot-compat",
+      "dotnet-maui-doctor",
+      "dotnet-pinvoke",
+      "dotnet-test-frameworks",
+      "dotnet-trace-collect",
+      "dump-collect",
+      "eval-performance",
+      "exp-assertion-quality",
+      "exp-dotnet-test-frameworks",
+      "exp-mock-usage-analysis",
+      "exp-simd-vectorization",
+      "exp-test-gap-analysis",
+      "exp-test-maintainability",
+      "exp-test-smell-detection",
+      "exp-test-tagging",
+      "filter-syntax",
+      "generate-testability-wrappers",
+      "including-generated-files",
+      "incremental-build",
+      "maui-app-lifecycle",
+      "maui-collectionview",
+      "maui-data-binding",
+      "maui-dependency-injection",
+      "maui-safe-area",
+      "maui-shell-navigation",
+      "maui-theming",
+      "mcp-csharp-create",
+      "mcp-csharp-debug",
+      "mcp-csharp-publish",
+      "mcp-csharp-test",
+      "microbenchmarking",
+      "migrate-dotnet10-to-dotnet11",
+      "migrate-dotnet8-to-dotnet9",
+      "migrate-dotnet9-to-dotnet10",
+      "migrate-mstest-v1v2-to-v3",
+      "migrate-mstest-v3-to-v4",
+      "migrate-nullable-references",
+      "migrate-static-to-wrapper",
+      "migrate-vstest-to-mtp",
+      "migrate-xunit-to-xunit-v3",
+      "minimal-api-file-upload",
+      "msbuild-antipatterns",
+      "msbuild-modernization",
+      "msbuild-server",
+      "mtp-hot-reload",
+      "nuget-trusted-publishing",
+      "optimizing-ef-core-queries",
+      "platform-detection",
+      "resolve-project-references",
+      "run-tests",
+      "technology-selection",
+      "template-authoring",
+      "template-discovery",
+      "template-instantiation",
+      "template-validation",
+      "test-anti-patterns",
+      "thread-abort-migration",
+      "writing-mstest-tests"
+    ]
+  },
+  "skillCount": 68,
+  "skills": [
+    {
+      "plugin": "dotnet",
+      "name": "csharp-scripts",
+      "descriptionChars": 214,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet",
+      "name": "dotnet-pinvoke",
+      "descriptionChars": 538,
+      "userInvocable": true,
+      "resources": {
+        "references": 2
+      }
+    },
+    {
+      "plugin": "dotnet",
+      "name": "nuget-trusted-publishing",
+      "descriptionChars": 421,
+      "userInvocable": true,
+      "resources": {
+        "references": 2
+      }
+    },
+    {
+      "plugin": "dotnet-ai",
+      "name": "mcp-csharp-create",
+      "descriptionChars": 619,
+      "userInvocable": true,
+      "resources": {
+        "references": 2
+      }
+    },
+    {
+      "plugin": "dotnet-ai",
+      "name": "mcp-csharp-debug",
+      "descriptionChars": 675,
+      "userInvocable": true,
+      "resources": {
+        "references": 2
+      }
+    },
+    {
+      "plugin": "dotnet-ai",
+      "name": "mcp-csharp-publish",
+      "descriptionChars": 750,
+      "userInvocable": true,
+      "resources": {
+        "references": 3
+      }
+    },
+    {
+      "plugin": "dotnet-ai",
+      "name": "mcp-csharp-test",
+      "descriptionChars": 599,
+      "userInvocable": true,
+      "resources": {
+        "references": 2
+      }
+    },
+    {
+      "plugin": "dotnet-ai",
+      "name": "technology-selection",
+      "descriptionChars": 892,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-aspnet",
+      "name": "configuring-opentelemetry-dotnet",
+      "descriptionChars": 254,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-aspnet",
+      "name": "minimal-api-file-upload",
+      "descriptionChars": 55,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-data",
+      "name": "optimizing-ef-core-queries",
+      "descriptionChars": 250,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "analyzing-dotnet-performance",
+      "descriptionChars": 287,
+      "userInvocable": true,
+      "resources": {
+        "references": 7
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "android-tombstone-symbolication",
+      "descriptionChars": 754,
+      "userInvocable": true,
+      "resources": {
+        "scripts": 1
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "apple-crash-symbolication",
+      "descriptionChars": 873,
+      "userInvocable": true,
+      "resources": {
+        "references": 1,
+        "scripts": 1
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "clr-activation-debugging",
+      "descriptionChars": 428,
+      "userInvocable": true,
+      "resources": {
+        "references": 3
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "dotnet-trace-collect",
+      "descriptionChars": 321,
+      "userInvocable": true,
+      "resources": {
+        "references": 5
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "dump-collect",
+      "descriptionChars": 432,
+      "userInvocable": true,
+      "resources": {
+        "references": 3
+      }
+    },
+    {
+      "plugin": "dotnet-diag",
+      "name": "microbenchmarking",
+      "descriptionChars": 665,
+      "userInvocable": true,
+      "resources": {
+        "references": 5
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "dotnet-maui-doctor",
+      "descriptionChars": 649,
+      "userInvocable": true,
+      "resources": {
+        "references": 11
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-app-lifecycle",
+      "descriptionChars": 677,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-collectionview",
+      "descriptionChars": 664,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-data-binding",
+      "descriptionChars": 846,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-dependency-injection",
+      "descriptionChars": 685,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-safe-area",
+      "descriptionChars": 774,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-shell-navigation",
+      "descriptionChars": 805,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-maui",
+      "name": "maui-theming",
+      "descriptionChars": 717,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "binlog-failure-analysis",
+      "descriptionChars": 754,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "binlog-generation",
+      "descriptionChars": 642,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "build-parallelism",
+      "descriptionChars": 843,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "build-perf-baseline",
+      "descriptionChars": 569,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "build-perf-diagnostics",
+      "descriptionChars": 891,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "check-bin-obj-clash",
+      "descriptionChars": 878,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "directory-build-organization",
+      "descriptionChars": 930,
+      "userInvocable": true,
+      "resources": {
+        "references": 3
+      }
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "eval-performance",
+      "descriptionChars": 853,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "including-generated-files",
+      "descriptionChars": 888,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "incremental-build",
+      "descriptionChars": 871,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "msbuild-antipatterns",
+      "descriptionChars": 572,
+      "userInvocable": true,
+      "resources": {
+        "references": 3
+      }
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "msbuild-modernization",
+      "descriptionChars": 785,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "msbuild-server",
+      "descriptionChars": 418,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-msbuild",
+      "name": "resolve-project-references",
+      "descriptionChars": 491,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-nuget",
+      "name": "convert-to-cpm",
+      "descriptionChars": 850,
+      "userInvocable": true,
+      "resources": {
+        "references": 5
+      }
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "name": "template-authoring",
+      "descriptionChars": 698,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "name": "template-discovery",
+      "descriptionChars": 678,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "name": "template-instantiation",
+      "descriptionChars": 674,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-template-engine",
+      "name": "template-validation",
+      "descriptionChars": 760,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "code-testing-agent",
+      "descriptionChars": 598,
+      "userInvocable": true,
+      "resources": {
+        "extensions": 1
+      }
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "coverage-analysis",
+      "descriptionChars": 960,
+      "userInvocable": true,
+      "resources": {
+        "references": 2,
+        "scripts": 2
+      }
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "crap-score",
+      "descriptionChars": 479,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "detect-static-dependencies",
+      "descriptionChars": 652,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "dotnet-test-frameworks",
+      "descriptionChars": 405,
+      "userInvocable": false,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "filter-syntax",
+      "descriptionChars": 312,
+      "userInvocable": false,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "generate-testability-wrappers",
+      "descriptionChars": 915,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "migrate-mstest-v1v2-to-v3",
+      "descriptionChars": 1005,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "migrate-mstest-v3-to-v4",
+      "descriptionChars": 1022,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "migrate-static-to-wrapper",
+      "descriptionChars": 1006,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "migrate-vstest-to-mtp",
+      "descriptionChars": 864,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "migrate-xunit-to-xunit-v3",
+      "descriptionChars": 260,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "mtp-hot-reload",
+      "descriptionChars": 703,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "platform-detection",
+      "descriptionChars": 271,
+      "userInvocable": false,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "run-tests",
+      "descriptionChars": 970,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "test-anti-patterns",
+      "descriptionChars": 986,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-test",
+      "name": "writing-mstest-tests",
+      "descriptionChars": 787,
+      "userInvocable": true,
+      "resources": {}
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "dotnet-aot-compat",
+      "descriptionChars": 491,
+      "userInvocable": true,
+      "resources": {
+        "references": 1
+      }
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "migrate-dotnet10-to-dotnet11",
+      "descriptionChars": 762,
+      "userInvocable": true,
+      "resources": {
+        "references": 6
+      }
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "migrate-dotnet8-to-dotnet9",
+      "descriptionChars": 671,
+      "userInvocable": true,
+      "resources": {
+        "references": 10
+      }
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "migrate-dotnet9-to-dotnet10",
+      "descriptionChars": 1017,
+      "userInvocable": true,
+      "resources": {
+        "references": 10
+      }
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "migrate-nullable-references",
+      "descriptionChars": 634,
+      "userInvocable": true,
+      "resources": {
+        "references": 4,
+        "scripts": 1
+      }
+    },
+    {
+      "plugin": "dotnet-upgrade",
+      "name": "thread-abort-migration",
+      "descriptionChars": 769,
+      "userInvocable": true,
+      "resources": {}
+    }
+  ],
+  "snapshotSha256": "96e44d2957055b2109a3344995e4d1cb2724a17e5cbf7386ada16589342b22a4",
+  "snapshotFiles": 205,
+  "snapshotBytes": 1416074
+}

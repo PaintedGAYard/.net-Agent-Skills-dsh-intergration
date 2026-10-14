@@ -1,0 +1,4 @@
+{
+  "title": ".NET Agent Skills",
+  "description": "Loads curated .NET/C# skills from dotnet/skills into the session skill catalog, with authored routing descriptions and project detection."
+}

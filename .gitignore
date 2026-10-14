@@ -427,5 +427,16 @@ FodyWeavers.xsd
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
 
+
+# ---------------------------------------------------------------------------
+# This project
+# ---------------------------------------------------------------------------
+
+# Authoring input pack emitted by `node tools/descriptions.mjs prepare`.
+# Regenerate it at any time; it is a working file, not a deliverable.
+.authoring/
+
+.tmp-test
+
 # Working Artifacts
 /drafting

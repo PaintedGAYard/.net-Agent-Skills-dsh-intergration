@@ -1,0 +1,328 @@
+{
+  "upstream": {
+    "tag": "v1.0.0",
+    "commit": "cb7c10bd32b250459632df9e6fa1350cdaf00b18"
+  },
+  "license": "Derived from dotnet/skills (MIT). See vendor/upstream/LICENSE.",
+  "budget": 320,
+  "entries": {
+    "dotnet-ai/mcp-csharp-create": {
+      "text": "Create MCP servers with the C# SDK and .NET templates. USE FOR: new MCP server projects, dotnet new mcpserver, adding tools, prompts or resources, choosing stdio vs HTTP. DO NOT USE FOR: debugging or running servers (use mcp-csharp-debug), testing (use mcp-csharp-test), publishing (use mcp-csharp-publish).",
+      "sourceChars": 619,
+      "sourceSha256": "bf2f688903db9902eddda19545c9239aa5ef729256beeac4c4d09be5863d2692",
+      "authoredRevision": 1
+    },
+    "dotnet-ai/mcp-csharp-debug": {
+      "text": "Run and debug C# MCP servers locally: MCP Inspector, VS Code or Visual Studio, Copilot Agent Mode. USE FOR: dotnet run, MCP Inspector, diagnosing tool registration, mcp.json, stdio and HTTP. DO NOT USE FOR: creating servers (use mcp-csharp-create), tests (use mcp-csharp-test), publishing (use mcp-csharp-publish).",
+      "sourceChars": 675,
+      "sourceSha256": "6a732647ac5d1c6df9aef238e47aab971e39bdc1cba86b662fcd3874dd11e038",
+      "authoredRevision": 1
+    },
+    "dotnet-ai/mcp-csharp-publish": {
+      "text": "Publish and deploy C# MCP servers: NuGet packaging, Docker, Azure, the MCP Registry. USE FOR: stdio servers as NuGet tools, Dockerfiles for HTTP servers, Azure Container Apps, the MCP Registry. DO NOT USE FOR: creating servers (use mcp-csharp-create), debugging (use mcp-csharp-debug), tests (use mcp-csharp-test).",
+      "sourceChars": 750,
+      "sourceSha256": "d185dacb6f8cca923b2468062a0bcd2d548b56e20b5998e37bef1394b87650f5",
+      "authoredRevision": 1
+    },
+    "dotnet-ai/mcp-csharp-test": {
+      "text": "Test C# MCP servers: unit tests for individual tools, integration tests through the MCP client SDK. USE FOR: unit testing tool methods, in-memory client and server tests, end-to-end protocol testing, eval questions. DO NOT USE FOR: MCP clients (server testing only), load testing, debugging (use mcp-csharp-debug).",
+      "sourceChars": 599,
+      "sourceSha256": "4a8195a779704e79f288d6145ec28a8d66f9aca78f8356b1a928628931c6ba80",
+      "authoredRevision": 1
+    },
+    "dotnet-ai/technology-selection": {
+      "text": "Guide AI and ML technology selection in .NET 8+ apps: ML.NET, Microsoft.Extensions.AI, Microsoft Agent Framework, Copilot SDK, ONNX Runtime and OllamaSharp. For classic ML, LLM integration, RAG with vector search, agentic tool calling and Copilot extensions. Not for .NET Framework or pure data engineering and ETL.",
+      "sourceChars": 892,
+      "sourceSha256": "6f23c82263efec7185be35f2bd897ad7fb557a257ab9327b1a88f3e0f912224c",
+      "authoredRevision": 1
+    },
+    "dotnet-diag/android-tombstone-symbolication": {
+      "text": "Symbolicate .NET runtime frames in an Android tombstone: extract BuildIds and PC offsets, fetch symbols from the Microsoft symbol server, and run llvm-symbolizer for names with file and line numbers. For .NET MAUI or Mono Android crashes. Not for Java or Kotlin crashes, managed exceptions in logcat, or iOS logs.",
+      "sourceChars": 754,
+      "sourceSha256": "20a34eae7a218ab87d736480085eb0269a77e82d40e8ea2652039c5df6827f3c",
+      "authoredRevision": 1
+    },
+    "dotnet-diag/apple-crash-symbolication": {
+      "text": "Symbolicate .NET runtime frames in Apple .ips crash logs (iOS, tvOS, Mac Catalyst, macOS): locate dSYM symbols, run atos for names with file and line numbers, and fetch .dwarf symbols from the Microsoft symbol server. For .NET MAUI or Mono crashes. Not for Swift or Objective-C crashes, or Android tombstones.",
+      "sourceChars": 873,
+      "sourceSha256": "2516d41cee831691ff6e1761e6554b9e5237ae3c0c0a6a5966433d927edd2b23",
+      "authoredRevision": 1
+    },
+    "dotnet-diag/microbenchmarking": {
+      "text": "Use when BenchmarkDotNet is involved: creating, running, configuring or reviewing BDN benchmarks, or when microbenchmarking .NET code would help. Covers microbenchmark design, BDN configuration and side-by-side comparisons. Not for profiling or tracing (dotnet-trace, PerfView), telemetry, or load testing.",
+      "sourceChars": 665,
+      "sourceSha256": "377abc712f9457a1bd7bcab606858beae5807707f4f752e14cc02f6a0e17ab44",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/dotnet-maui-doctor": {
+      "text": "Diagnose and fix .NET MAUI development environment issues - .NET SDK, workloads, Java JDK, Android SDK, Xcode, Windows SDK - with version requirements read from NuGet WorkloadDependencies.json rather than hardcoded. Use when: setting up MAUI development. Do not use for: non-MAUI .NET projects, Xamarin.Forms apps.",
+      "sourceChars": 649,
+      "sourceSha256": "2b61a1c9098ab97b657c7bd1eb11d2ec6f9f06b01f41c83ec461bc8ac02afcd2",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-app-lifecycle": {
+      "text": ".NET MAUI app lifecycle: the four app states, Window events (Created, Activated, Deactivated, Stopped, Resumed, Destroying) and state preservation. USE FOR: app lifecycle or window lifecycle events. DO NOT USE FOR: navigation events (use maui-shell-navigation), DI setup (use maui-dependency-injection).",
+      "sourceChars": 677,
+      "sourceSha256": "9b26d7e9eb66107e5261cc1197e0ec36321b7a2a23eaedf7e33d5204de360f1a",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-collectionview": {
+      "text": "Implement CollectionView in .NET MAUI: data display, list and grid layouts, selection, grouping, scrolling, templates, incremental loading, swipe actions and pull-to-refresh. USE FOR: CollectionView, list view or grid layout. DO NOT USE FOR: simple static layouts without scrollable data (use Grid or StackLayout).",
+      "sourceChars": 664,
+      "sourceSha256": "6115aafea356e627cd2cd69db6f356191f12670570e32ed454ee1dbeba3b17cf",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-data-binding": {
+      "text": ".NET MAUI data binding in XAML and C#: compiled bindings, INotifyPropertyChanged, converters, binding modes and MVVM. USE FOR: compiled bindings with x:DataType. DO NOT USE FOR: templates, Shell navigation or dependency injection (use maui-collectionview, maui-shell-navigation or maui-dependency-injection).",
+      "sourceChars": 846,
+      "sourceSha256": "1525e97be47f16df91b113d66a19fc7a7a8e1b307a55fc100b198aba96fd0d1d",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-dependency-injection": {
+      "text": "Configure dependency injection in .NET MAUI: service registration in MauiProgram.cs, lifetimes, constructor injection, Shell resolution and testability. USE FOR: dependency injection or DI setup. DO NOT USE FOR: data binding (use maui-data-binding), Shell route configuration (use maui-shell-navigation).",
+      "sourceChars": 685,
+      "sourceSha256": "ec834245c4c99a08331793ed12a0440d732b90d7652f21195af022416b2cfe00",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-safe-area": {
+      "text": ".NET MAUI safe area and edge-to-edge layout for .NET 10+: SafeAreaEdges, SafeAreaRegions, per-edge control, keyboard avoidance and Blazor Hybrid CSS. USE FOR: safe area or edge-to-edge. DO NOT USE FOR: app lifecycle handling (use maui-app-lifecycle), theming or styling (use maui-theming).",
+      "sourceChars": 774,
+      "sourceSha256": "5c97b0da49398bad09fd44af945c6c9dc83028369b5d75add6814a2df93d96eb",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-shell-navigation": {
+      "text": "Implement Shell navigation in .NET MAUI: AppShell, the FlyoutItem, TabBar, Tab and ShellContent hierarchy, GoToAsync routes, parameters, back navigation and guards. Use when: setting up Shell navigation. Do not use for: data binding (use maui-data-binding), dependency injection setup (use maui-dependency-injection).",
+      "sourceChars": 805,
+      "sourceSha256": "99704722bdaa1720b5a4767da327180b0787547708512510cc1ff5f1ceb0faef",
+      "authoredRevision": 1
+    },
+    "dotnet-maui/maui-theming": {
+      "text": "Theme .NET MAUI apps: light and dark mode with AppThemeBinding, ResourceDictionary theme switching, DynamicResource bindings, system theme detection and user preferences. Use when: dark mode or light mode. Do not use for: localization or language switching, accessibility visual adjustments, app icons or splash screens.",
+      "sourceChars": 717,
+      "sourceSha256": "990fa5cd8a9f744e01ddbd8447e58586597e815d0acce0db8d6e12460ab58ab8",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/binlog-failure-analysis": {
+      "text": "Diagnose MSBuild build failures by replaying an existing .binlog into searchable text logs. USE FOR: errors unclear from console output or codes like CS0246, MSB4019, NU1605 and MSB3277. DO NOT USE FOR: generating binlogs (use binlog-generation), build performance (use build-perf-diagnostics).",
+      "sourceChars": 754,
+      "sourceSha256": "01dbd4cd2c7b5ada7a4953754203e87f5b40c1d7cd82508c367e3da4b9cb77b2",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/binlog-generation": {
+      "text": "Generate MSBuild binary logs for build diagnostics. USE FOR: adding /bl:{} to dotnet build, test, pack, publish or restore for a full execution trace. DO NOT USE FOR: analyzing an existing binlog (use binlog-failure-analysis), non-MSBuild build systems.",
+      "sourceChars": 642,
+      "sourceSha256": "0c3fec1dd1513d4fcc7ef0b516601925752b9790b11d77e16d2dc9afa10c6205",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/build-parallelism": {
+      "text": "Speed up MSBuild parallelism and multi-project scheduling; /maxcpucount defaults to 1, so use -m. USE FOR: builds not using all cores, no gain from -m, or graph build (/graph) unexplored. DO NOT USE FOR: incremental issues (use incremental-build), compilation slowness (use build-perf-diagnostics).",
+      "sourceChars": 843,
+      "sourceSha256": "29328c9e53c612d233afdaa33ac0916773fb623f2088549fd46f8066ddf4698a",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/build-perf-baseline": {
+      "text": "Establish build performance baselines and apply systematic optimization. USE FOR: slow builds, before/after measurements (cold, warm, no-op), MSBuild Server, static graph builds, artifacts output. DO NOT USE FOR: detailed bottleneck analysis (use build-perf-diagnostics once baselined), non-MSBuild build systems.",
+      "sourceChars": 569,
+      "sourceSha256": "c0604efda66187f04440b7635bd6796abbe5af42e232667d64b258b62a972258",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/build-perf-diagnostics": {
+      "text": "Find MSBuild build performance bottlenecks in binlog summaries. USE FOR: why builds are slow: ResolveAssemblyReference over 5s, node utilization under 80%, restore on every build. DO NOT USE FOR: baselines (use build-perf-baseline), incremental (use incremental-build), parallelism tuning (use build-parallelism).",
+      "sourceChars": 891,
+      "sourceSha256": "a5a0433b9458bb98d0f390f18400c016d2afd47e29ad6ff4cde135687964c283",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/check-bin-obj-clash": {
+      "text": "Detect MSBuild projects with conflicting OutputPath or IntermediateOutputPath. USE FOR: cannot-create-a-file errors, file in use by another process, intermittent failures that succeed on retry, missing outputs in multi-project builds. DO NOT USE FOR: file access errors unrelated to MSBuild, non-MSBuild build systems.",
+      "sourceChars": 878,
+      "sourceSha256": "9174ed346f1bd15037f556f66738d5733b8eb5b96a2bd7cf6be00d950a1ac5e3",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/directory-build-organization": {
+      "text": "Organize MSBuild infrastructure with Directory.Build.props, Directory.Build.targets, Directory.Packages.props and Directory.Build.rsp. USE FOR: structuring multi-project repos or Central Package Management. DO NOT USE FOR: migrating legacy projects (use msbuild-modernization), non-MSBuild build systems.",
+      "sourceChars": 930,
+      "sourceSha256": "3ae91c6713d8685e14b866ff27b7cdd2308999e000c41104836006605657a316",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/eval-performance": {
+      "text": "Diagnose MSBuild evaluation performance: builds slow before compilation starts. USE FOR: high evaluation time in binlogs, expensive globs walking node_modules, .git, bin or obj, import chains over 20 levels. DO NOT USE FOR: compilation slowness (use build-perf-diagnostics), incremental issues (use incremental-build).",
+      "sourceChars": 853,
+      "sourceSha256": "13cbbc1f521a5aea40817d87c3b846f1d5b814fea00f8e7ad07627e638944c17",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/including-generated-files": {
+      "text": "Fix MSBuild targets whose generated files are missing from compilation or output. USE FOR: generated sources not compiling (CS0246 for a type that should exist) or invisible to later targets. DO NOT USE FOR: working C# source generators, T4 design-time generation, non-MSBuild build systems.",
+      "sourceChars": 888,
+      "sourceSha256": "1796a3ec059b34395eeb15215b6eb9b506b0282f7f551060870eba95ef72c308",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/incremental-build": {
+      "text": "Optimize MSBuild incremental builds. USE FOR: slower-than-expected rebuilds, nothing changed but it rebuilds anyway, targets re-executing unnecessarily. DO NOT USE FOR: first-time build slowness (use build-perf-baseline), parallelism (use build-parallelism), evaluation slowness (use eval-performance).",
+      "sourceChars": 871,
+      "sourceSha256": "26d3073b5a03914c36efef065aa2cd2b8cf7d26b508135b08ad020909573667d",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/msbuild-antipatterns": {
+      "text": "Catalog of MSBuild anti-patterns with detection rules and fix recipes. USE FOR: reviewing, auditing or cleaning up .csproj, .vbproj, .fsproj, .props, .targets or .proj files. DO NOT USE FOR: project migration to SDK-style (use msbuild-modernization), non-MSBuild build systems.",
+      "sourceChars": 572,
+      "sourceSha256": "1d416b91fcd854ba844af704279acad8701919e93fa286ff3e8317e7656c25e1",
+      "authoredRevision": 1
+    },
+    "dotnet-msbuild/msbuild-modernization": {
+      "text": "Modernize and migrate MSBuild project files to SDK-style. USE FOR: converting verbose legacy .csproj or .vbproj, or migrating packages.config to PackageReference. DO NOT USE FOR: projects already in SDK-style, .NET Framework projects that cannot move to SDK-style, non-.NET build systems.",
+      "sourceChars": 785,
+      "sourceSha256": "ba358c62dbc9fa3d116eba9e4e0a7264eedad87e70929669bcd78ebb89419850",
+      "authoredRevision": 1
+    },
+    "dotnet-nuget/convert-to-cpm": {
+      "text": "Convert .NET projects and solutions (.sln, .slnx) to NuGet Central Package Management with Directory.Packages.props. USE FOR: converting to CPM, aligning package versions, resolving version conflicts, packages out of sync. DO NOT USE FOR: packages.config projects (migrate to PackageReference first).",
+      "sourceChars": 850,
+      "sourceSha256": "2c44ac7c4585655f938b4929cda9db545c866d5d7ce4eff9e9f8ea9d7968a7f5",
+      "authoredRevision": 1
+    },
+    "dotnet-template-engine/template-authoring": {
+      "text": "Create and validate custom dotnet new templates: generate templates from existing projects and check template.json for authoring issues. USE FOR: create a reusable template from an existing project. DO NOT USE FOR: finding or using existing templates (use template-discovery or template-instantiation).",
+      "sourceChars": 698,
+      "sourceSha256": "9c016638808e77d0faa5faf1b9975aece0fcf1b6a6b74af0eb81f297280686f6",
+      "authoredRevision": 1
+    },
+    "dotnet-template-engine/template-discovery": {
+      "text": "Find, inspect and compare .NET project templates, resolving a natural-language project description to ranked template matches with pre-filled parameters. USE FOR: find the right dotnet new template. DO NOT USE FOR: creating projects (use template-instantiation), authoring templates (use template-authoring).",
+      "sourceChars": 678,
+      "sourceSha256": "78622eebb10e999fd7d8157ef65fab488157813f208281296ecf63afca2b912c",
+      "authoredRevision": 1
+    },
+    "dotnet-template-engine/template-instantiation": {
+      "text": "Create .NET projects from templates with validated parameters, smart defaults, Central Package Management adaptation and latest NuGet versions. USE FOR: create new dotnet projects. DO NOT USE FOR: finding or comparing templates (use template-discovery), authoring custom templates (use template-authoring).",
+      "sourceChars": 674,
+      "sourceSha256": "06f48754700baf3c4ef373edb8aed9ea823d8985c40fbdf357f75ca4e06a280c",
+      "authoredRevision": 1
+    },
+    "dotnet-template-engine/template-validation": {
+      "text": "Validate custom dotnet new templates before publishing: missing fields, parameter bugs, shortName conflicts and silent failures. USE FOR: check template.json before publishing or testing. DO NOT USE FOR: finding, creating or authoring templates (use template-discovery, template-instantiation or template-authoring).",
+      "sourceChars": 760,
+      "sourceSha256": "3bc100cf5d203d1079be4e6ee08564880256bf3f860e72fea728af6bf2f4a240",
+      "authoredRevision": 1
+    },
+    "dotnet-test/code-testing-agent": {
+      "text": "Generate comprehensive unit tests for any language with a multi-agent research, planning and implementation pipeline. USE FOR: generating tests or creating test files. DO NOT USE FOR: running existing tests, executing dotnet test, filters, platform detection or troubleshooting execution (use run-tests).",
+      "sourceChars": 598,
+      "sourceSha256": "1af4b11a611e9f096301834686f732988c594647e4747a27a353e1263224a16f",
+      "authoredRevision": 1
+    },
+    "dotnet-test/coverage-analysis": {
+      "text": "Project-wide coverage and CRAP score analysis for .NET projects with existing unit tests, via Coverlet or Microsoft.Testing.Extensions.CodeCoverage. USE FOR: coverage gaps and risk hotspots across a solution. DO NOT USE FOR: single-method CRAP analysis (use crap-score), writing or running tests (use run-tests).",
+      "sourceChars": 960,
+      "sourceSha256": "deaf244197ace4c896c15cf1045875b04eda37b491d89a0db527061107aca872",
+      "authoredRevision": 1
+    },
+    "dotnet-test/detect-static-dependencies": {
+      "text": "Scan C# source for hard-to-test static dependencies: DateTime.Now/UtcNow, File.*, Directory.*, Environment.*, HttpClient, Console.*, Process.*. USE FOR: find untestable statics. DO NOT USE FOR: generating wrappers (use generate-testability-wrappers), migrating call sites (use migrate-static-to-wrapper).",
+      "sourceChars": 652,
+      "sourceSha256": "680245bde0e82fa66b7ea5e6b9cda49f1cdfba0f452b405d43346212823b52a4",
+      "authoredRevision": 1
+    },
+    "dotnet-test/generate-testability-wrappers": {
+      "text": "Generate wrappers and DI registration for hard-to-test statics in C#: IFileSystem, IConsole, TimeProvider, IHttpClientFactory. USE FOR: wrap DateTime.Now or File.ReadAllText so they can be mocked. DO NOT USE FOR: detecting statics (use detect-static-dependencies), migrating call sites (use migrate-static-to-wrapper).",
+      "sourceChars": 915,
+      "sourceSha256": "dab73154b55561ff4527ee8ad2e4e889ac1a60978f423ba5a8caf00c11ad3029",
+      "authoredRevision": 1
+    },
+    "dotnet-test/migrate-mstest-v1v2-to-v3": {
+      "text": "Migrate an MSTest v1 or v2 test project to MSTest v3, from assembly references or MSTest.TestFramework 1.x-2.x. USE FOR: upgrade MSTest, or build errors after bumping MSTest packages. DO NOT USE FOR: migrating on to MSTest v4 (use migrate-mstest-v3-to-v4), moving between frameworks (MSTest to xUnit or NUnit).",
+      "sourceChars": 1005,
+      "sourceSha256": "65b0294ea582c0ecab70a6fcf5945b27fc7c21d547b985521dde1fe971b05a43",
+      "authoredRevision": 1
+    },
+    "dotnet-test/migrate-mstest-v3-to-v4": {
+      "text": "Fix build errors and breaking changes after upgrading MSTest v3 to v4, or plan the whole migration. USE FOR: upgrade to MSTest v4. DO NOT USE FOR: migrating from v1 or v2 to v3 first (use migrate-mstest-v1v2-to-v3), moving between test frameworks, general .NET upgrades.",
+      "sourceChars": 1022,
+      "sourceSha256": "54c3c77a7b00abc13d0f56c10ffc7effd52b577bc3045ea995211474b17d0fb6",
+      "authoredRevision": 1
+    },
+    "dotnet-test/migrate-static-to-wrapper": {
+      "text": "Mechanically replace static call sites with wrappers or built-in abstractions across a bounded scope: file, project or namespace. USE FOR: replace DateTime.Now with TimeProvider. DO NOT USE FOR: detecting statics (use detect-static-dependencies), generating wrappers (use generate-testability-wrappers).",
+      "sourceChars": 1006,
+      "sourceSha256": "61c8f4159fd3fc3d4d7ee7a9bf3db7115c8188bb34db949ebb47c85a226349a1",
+      "authoredRevision": 1
+    },
+    "dotnet-test/migrate-vstest-to-mtp": {
+      "text": "Migrate .NET test projects from VSTest to Microsoft.Testing.Platform (MTP). USE FOR: migrate to MTP, switch from VSTest or use the MTP runner. DO NOT USE FOR: migrating between test frameworks, xUnit.net v2 to v3 API migration, MSTest version upgrades (use the migrate-mstest skills), TFM upgrades.",
+      "sourceChars": 864,
+      "sourceSha256": "ec31dc9725bd76b39361ff444d109ec62c7aac7f45d52e48813a5e1a92824f11",
+      "authoredRevision": 1
+    },
+    "dotnet-test/mtp-hot-reload": {
+      "text": "Set up Microsoft Testing Platform hot reload so a failing test can be iterated on without rebuilding. USE FOR: hot reload tests. DO NOT USE FOR: running tests normally with dotnet test (use run-tests), writing test code, diagnosing test failures, CI/CD configuration.",
+      "sourceChars": 703,
+      "sourceSha256": "bf270888c43b7be77812066b256d2eeb37a409b939b9471ba7ddc107a5c3dc4e",
+      "authoredRevision": 1
+    },
+    "dotnet-test/run-tests": {
+      "text": "Run .NET tests with dotnet test across VSTest and Microsoft.Testing.Platform, for MSTest, xUnit, NUnit and TUnit. USE FOR: run tests, or only specific tests. DO NOT USE FOR: writing or generating test code, CI/CD pipeline configuration, debugging failing test logic.",
+      "sourceChars": 970,
+      "sourceSha256": "2ed37607c64e143c2b5472d35b52eaa920d6930ce712eca283ae8c865a01e3f1",
+      "authoredRevision": 1
+    },
+    "dotnet-test/test-anti-patterns": {
+      "text": "Quick, detection-focused review of .NET test code for anti-patterns that undermine reliability and diagnostic value: assertion gaps, swallowed exceptions, always-true assertions. Catches flakiness indicators. Not for direct MSTest API rewrites or implementation-only fixes (use writing-mstest-tests).",
+      "sourceChars": 986,
+      "sourceSha256": "4c72bd06ca10fc7afb119397fad6b86b1f49ddd1046b9bb930a5fc719442e3fd",
+      "authoredRevision": 1
+    },
+    "dotnet-test/writing-mstest-tests": {
+      "text": "Best practices for writing new MSTest 3.x/4.x unit tests and implementing concrete fixes in existing MSTest code. Catches modern assertions, data-driven tests with DynamicData and ValueTuple. Not for broad test quality audits, flaky-test investigations or smell reports (use test-anti-patterns).",
+      "sourceChars": 787,
+      "sourceSha256": "fd6af6ab09626054e55f051734c65e11fa3a59b41288e5012ea5a1e0c37f2bca",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/dotnet-aot-compat": {
+      "text": "Make .NET projects compatible with Native AOT and trimming by resolving IL trim and AOT analyzer warnings. USE FOR: AOT compatibility, fixing trimming warnings, IL2026, IL2070, IL2067, IL2072 or IL3050. DO NOT USE FOR: publishing native AOT binaries, optimizing binary size, replacing reflection-heavy libraries.",
+      "sourceChars": 491,
+      "sourceSha256": "218002d162ea05eac65f8348ca65fecbbca3fc266fd49ec5c24e455912a27cf8",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/migrate-dotnet10-to-dotnet11": {
+      "text": "Migrate a .NET 10 project or solution to .NET 11 and resolve the breaking changes. A migration skill, not for new programs. USE FOR: TargetFramework net10.0 to net11.0. DO NOT USE FOR: .NET Framework migrations, upgrading from .NET 9 or earlier, greenfield .NET 11 projects.",
+      "sourceChars": 762,
+      "sourceSha256": "a249abefbbdc24f5e0d80248506597649c5b54bea984e882a53acadf78c2ecee",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/migrate-dotnet8-to-dotnet9": {
+      "text": "Migrate a .NET 8 project to .NET 9 and resolve the breaking changes. USE FOR: TargetFramework net8.0 to net9.0, build errors after updating the .NET 9 SDK. DO NOT USE FOR: .NET Framework migrations, upgrading from .NET 7 or earlier, greenfield .NET 9 projects, cosmetic modernization.",
+      "sourceChars": 671,
+      "sourceSha256": "d567eeed6a4e6f228542bb04ed53f79f1844f14c23e8779e945463e9b6a53716",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/migrate-dotnet9-to-dotnet10": {
+      "text": "Migrate a .NET 9 project or solution to .NET 10 and resolve the breaking changes. USE FOR: TargetFramework net9.0 to net10.0. DO NOT USE FOR: upgrading from .NET 8 or earlier (use migrate-dotnet8-to-dotnet9 first), .NET Framework migrations, greenfield .NET 10 projects, cosmetic modernization.",
+      "sourceChars": 1017,
+      "sourceSha256": "59ca97b644fb0d3b6a29f2d7782a88b15cc855753f368ccb500cdd2a60f84abd",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/migrate-nullable-references": {
+      "text": "Enable nullable reference types in a C# project and systematically resolve the warnings. USE FOR: adopting NRTs in an existing codebase. DO NOT USE FOR: projects already migrated with zero warnings (unless auditing suppressions), fixing a handful of warnings where NRTs are already on.",
+      "sourceChars": 634,
+      "sourceSha256": "5d214789658832092c581761fade701d8a4b4bb7a3b018aebe4848eb689cd4f9",
+      "authoredRevision": 1
+    },
+    "dotnet-upgrade/thread-abort-migration": {
+      "text": "Migrate .NET Framework Thread.Abort usage to cooperative cancellation in modern .NET. USE FOR: Thread.Abort call sites. DO NOT USE FOR: code that only uses Thread.Join, Thread.Sleep or Thread.Start without aborting, projects staying on .NET Framework, Thread.Abort inside third-party libraries you do not control.",
+      "sourceChars": 769,
+      "sourceSha256": "a3e678a6c2bcd838ddd220b1592481059e7a7bd0ec5b605ad507aa1e864d6b87",
+      "authoredRevision": 1
+    },
+    "dotnet/dotnet-pinvoke": {
+      "text": "Call native C/C++ libraries from .NET with P/Invoke and LibraryImport: signatures, string marshalling, memory lifetime, SafeHandle. USE FOR: writing P/Invoke declarations, wrapping a C or C++ library, and diagnosing crashes at the managed/native boundary. DO NOT USE FOR: COM interop, C++/CLI, or managed-only code.",
+      "sourceChars": 538,
+      "sourceSha256": "7d0c5fc233f6f7d0d9f9bf634e2628daa33abe5a3139cb6862de9d0d7a091819",
+      "authoredRevision": 1
+    },
+    "dotnet/nuget-trusted-publishing": {
+      "text": "Set up NuGet trusted publishing (OIDC) on a GitHub Actions repo, replacing long-lived API keys with short-lived tokens. USE FOR: trusted publishing, NuGet OIDC, keyless NuGet publish, NuGet/login, migrating from a NuGet API key. DO NOT USE FOR: private feeds or Azure Artifacts (OIDC is nuget.org only).",
+      "sourceChars": 421,
+      "sourceSha256": "f90bd7afdc38dca932261837a9d075731c8ee82e6c5137d02abe43a8d51d059b",
+      "authoredRevision": 1
+    }
+  }
+}

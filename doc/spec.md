@@ -1124,7 +1124,8 @@ A 阶段刻意只有两个工具。每个工具都付 schema token。
 
 | 工具 | 作用 | 备注 |
 |---|---|---|
-| `dotnet_skills_status` | 报告 §11.4 的全部诊断项 | Build/Measure 的主要抓手；`deferLoading: true` |
+| `dotnet_skills_status` | 报告 §11.4 的全部诊断项 | Build/Measure 的主要抓手；`deferLoading: true`，其名字由 `dotnet_skills_refresh` 的描述点名 |
+| `dotnet_skills_status(cwd)` | 按指定工作区重跑探测与选择，用于 M10 这种跨仓库的测量 | 可选参数，缺省取会话自己的工作区；两者都没有时明确报告「未扫描」。deferred 工具的参数不付常态 token |
 | `dotnet_skills_refresh` | 手动 `control.invalidate()`，项目文件变化后免重启 | 低成本高收益 |
 
 注册方式：`ctx.tools.register(definition)`，`definition` 是**纯对象**：
@@ -1135,6 +1136,15 @@ A 阶段刻意只有两个工具。每个工具都付 schema token。
 | `parameters` 直接收 JSON Schema | 宿主不在注册时校验它 |
 | 名字不得为 `run_code` | PTC 模式的保留名字 |
 | `deferLoading: true` | 支持，用于把 `dotnet_skills_status` 的 schema 移出常态请求 |
+
+**`deferLoading` 的实测语义（2026-10-14，两个独立干净会话实测）。** 带该标记的工具**不在模型的声明集合里**，
+而且**基线期就注册的 deferred 工具永远不会被通报**：宿主只为「上一次请求头里没有出现的名字」生成
+`tool-addition`，而它从第一份请求头起就在其中。工具仍可按名调用，但模型无从知道它存在——
+实测中一个干净会话因此写下了「不存在能 dump 技能目录的工具」这一被直接证伪的断言。
+
+所以 §11.4 的诊断入口必须另有一条发现通道：`dotnet_skills_refresh` 的描述点名了 `dotnet_skills_status`，
+`lib/tools.js` 的 `undiscoverableTools()` 在激活时与测试里同时守住这条不变量（deferred 工具必须有已声明工具
+提及它的名字）。这是与本设计一致的实现方式，不是对 §13 的偏离；宿主侧的语义细节见 `doc/dev-notes.md`。
 
 ---
 

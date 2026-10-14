@@ -1,0 +1,12 @@
+# The upstream snapshot must be byte-identical to dotnet/skills.
+# Never let autocrlf rewrite its line endings: the files under vendor/upstream/**
+# are what the running provider reads (and, under symlink deployment, what the
+# host's filesystem skill provider reads too).
+vendor/** -text
+
+# Authored data and tooling are ordinary text; normalise to LF in the repository.
+*.mjs text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.md text eol=lf
